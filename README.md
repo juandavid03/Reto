@@ -89,3 +89,56 @@ namespace ConsoleApplication2
         }
         }
     }
+
+
+          public static void int preciosz1(int cash)
+          {
+              cash = cash * 25 / 100;
+
+
+              Console.WriteLine("el impuesto a pagar es {0}", cash);
+              
+          }
+          public static void int preciosz2(int cash)
+          {
+
+              cash = (cash * 12 / 100) + 25;
+
+              Console.WriteLine("el impuesto a pagar es {0}", cash);
+
+          }
+          public static void int preciosz3(int cash)
+          {
+             cash =cash * 8 / 100;
+             Console.WriteLine("el impuesto a pagar es {0}", cash);
+
+          }
+          public static void int preciosz4(int cash)
+          {
+              cash = (cash * 4 / 100) + 25;
+
+              Console.WriteLine("el impuesto a pagar es {0}", cash)
+              
+          }
+
+          static void Main(string[] args)
+          {
+              string zone;
+          do
+          {
+              Console.WriteLine("escriba salir para salir :v");
+              Console.WriteLine();
+              Console.WriteLine("ingrese una zona");
+
+              zone = Console.ReadLine();
+              zona zona = zonas;
+              zonas(zone);
+
+              Console.ReadKey();
+          } 
+          while (zone != "salir");
+
+          }
+    }
+          
+}
