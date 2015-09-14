@@ -11,7 +11,6 @@ namespace ConsoleApplication2
 
         public delegate string zona(string zonas);
         
-        public delegate int impuesto(int total);
         
 
     class Program
@@ -22,65 +21,57 @@ namespace ConsoleApplication2
 
         public static  string zonas(string zona)
         {
-            if (zona == "zona1")
+            if (zona == "1")
             {
-                int precioz1;
+                int p1;
                 string precio;
                 int impuesto;
                 Console.WriteLine("ingrese un el precio");
                 precio = Console.ReadLine();
                 int.TryParse(precio, out impuesto);
-                impuesto si = precioz1;
-                precioz1 = precio * 25 / 100;
-                Console.WriteLine("El impuesto es: {0}", precioz1);
+                impuesto si = precio1;
+                p1 = precio * 25 / 100;
                 
-                si(impuesto)
                 
             }
-            if (zona == "zona2")
+            if (zona == "2")
             {
-                int precioz2;
+                int p2;
                 string precio;
                 int impuesto;
                 Console.WriteLine("ingrese un el precio");
                 precio = Console.ReadLine();
                 int.TryParse(precio, out impuesto);
-                impuesto si = precioz2;
-                precioz2 = (precio* 12 / 100) + 25;
-                Console.WriteLine("El impuesto es: {0}", precioz2);
+                impuesto si = precio2;
+                p2 = (precio* 12 / 100) + 25;
                 
-                si(impuesto)
 
             }
-            if (zona == "zona3")
+            if (zona == "3")
             {
-                int precioz3;
+                int p3;
                 string precio;
                 int impuesto;
                 Console.WriteLine("ingrese un el precio");
                 precio = Console.ReadLine();
                 int.TryParse(precio, out impuesto);
-                impuesto si = precioz3;
-                precioz3 = precio * 8 / 100;
-                Console.WriteLine("El impuesto es: {0}", precioz3);
+                impuesto si = precio3;
+                p3 = precio * 8 / 100;
                 
-                si(impuesto)
 
             }
 
-            if (zona == "zona4")
+            if (zona == "4")
             {
-                int precioz4;
+                int p4;
                 string precio;
                 int impuesto;
                 Console.WriteLine("ingrese un el precio");
                 precio = Console.ReadLine();
                 int.TryParse(precio, out impuesto);
-                impuesto si = precioz4;
-                precioz4 = (precio * 4 / 100) + 25;
-                Console.WriteLine("El impuesto es: {0}", precioz4);
+                impuesto si = precio4;
+                p4 = (precio * 4 / 100) + 25;
                 
-                si(impuesto)
 
             }
            
@@ -91,33 +82,24 @@ namespace ConsoleApplication2
     }
 
 
-          public static void int preciosz1(int cash)
+          public static void int precio1(int p3)
           {
-              cash = cash * 25 / 100;
-
-
-              Console.WriteLine("el impuesto a pagar es {0}", cash);
+              Console.WriteLine("el impuesto a pagar es {0}", p1);
               
           }
-          public static void int preciosz2(int cash)
+          public static void int precio2(int p3)
           {
-
-              cash = (cash * 12 / 100) + 25;
-
-              Console.WriteLine("el impuesto a pagar es {0}", cash);
+              Console.WriteLine("el impuesto a pagar es {0}", p2);
 
           }
-          public static void int preciosz3(int cash)
+          public static void int precio3(int p3)
           {
-             cash =cash * 8 / 100;
-             Console.WriteLine("el impuesto a pagar es {0}", cash);
+             Console.WriteLine("el impuesto a pagar es {0}", p3);
 
           }
-          public static void int preciosz4(int cash)
+          public static void int precio4(int p4)
           {
-              cash = (cash * 4 / 100) + 25;
-
-              Console.WriteLine("el impuesto a pagar es {0}", cash)
+              Console.WriteLine("el impuesto a pagar es {0}", p4)
               
           }
 
@@ -126,9 +108,9 @@ namespace ConsoleApplication2
               string zone;
           do
           {
-              Console.WriteLine("escriba salir para salir :v");
+              Console.WriteLine("escriba salir para salir: ");
               Console.WriteLine();
-              Console.WriteLine("ingrese una zona");
+              Console.WriteLine("ingrese el numero de una zona");
 
               zone = Console.ReadLine();
               zona zona = zonas;
