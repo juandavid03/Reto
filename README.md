@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
+
         public delegate string zona(string zonas);
+        
         public delegate int impuesto(int total);
+        
 
     class Program
+    
     {
+    
 
 
         public static  string zonas(string zona)
@@ -29,6 +34,8 @@ namespace ConsoleApplication2
                 precioz1 = precio * 25 / 100;
                 Console.WriteLine("El impuesto es: {0}", precioz1);
                 
+                si(impuesto)
+                
             }
             if (zona == "zona2")
             {
@@ -41,6 +48,8 @@ namespace ConsoleApplication2
                 impuesto si = precioz2;
                 precioz2 = (precio* 12 / 100) + 25;
                 Console.WriteLine("El impuesto es: {0}", precioz2);
+                
+                si(impuesto)
 
             }
             if (zona == "zona3")
@@ -54,6 +63,8 @@ namespace ConsoleApplication2
                 impuesto si = precioz3;
                 precioz3 = precio * 8 / 100;
                 Console.WriteLine("El impuesto es: {0}", precioz3);
+                
+                si(impuesto)
 
             }
 
@@ -68,6 +79,8 @@ namespace ConsoleApplication2
                 impuesto si = precioz4;
                 precioz4 = (precio * 4 / 100) + 25;
                 Console.WriteLine("El impuesto es: {0}", precioz4);
+                
+                si(impuesto)
 
             }
            
